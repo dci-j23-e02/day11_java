@@ -14,7 +14,7 @@ public class WhileLoop {
 //    }
     // outside the loop :
     // System.out.println(i); // 5
-
+/*
     Scanner input = new Scanner(System.in);
     System.out.println("Please guess the correct number: ");
     String stringNum = input.nextLine(); // reading the number as a string
@@ -47,16 +47,25 @@ public class WhileLoop {
     }else{
       System.out.println("Too many trails, game over !!!");
     }
-
+*/
 
 /**
  *  (num != 8 && numOfTrials < 4 ){
- *    true    &&    true           = true // keep inside the loop
- *   false    &&    true           = false // break the loop
+ *    true    &&    true           = true   // keep inside the loop
+ *   false    &&    true           = false  // break the loop
  *    true    &&    false          = false  // break the loop
  *    false   &&    false          = false  // break the loop
  * */
+    Scanner input = new Scanner(System.in);
+    String stringAge; // reading the number as a string
+    int age ; //  converting to int
 
+do{
+  System.out.println("We sell our product only for adults 'over 18 !!!'");
+  System.out.println("Please enter your age : ");
+  stringAge = input.nextLine(); // reading the number as a string
+  age = Integer.parseInt(stringAge); //  converting to int
+}while(age < 18); // break only if adult is coming : over 18 : starting from 19
 
   }
 }
